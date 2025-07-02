@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,19 +7,33 @@
         <title>SK Form</title>
     </head>
     <body class="body">
-        <header class="header">
-
-        </header>
+        <header class="header"></header>
         <main class="main">
             <form method="get" class="main__form">
-
-
+                <fieldset class="form__fieldset-basic-info">
+                    <legend>Información Básica</legend>
+                    <label for="">
+                        <input type="text" placeholder="Nombre" />
+                        <input type="text" placeholder="Apellidos" />
+                    </label>
+                    <label for="">
+                        <input type="email" placeholder="example@domain.com" />
+                        <input type="tel" placeholder="+123 456 789" />
+                    </label>
+                </fieldset>
+                <fieldset class="form__fieldset-user-preferences">
+                    <legend>Preferencias de Usuario</legend>
+                </fieldset>
+                <fieldset class="form__fieldset-additional-info">
+                    <legend>Información Adicional</legend>
+                    <input type="checkbox" required /> Acepto los términos de uso
+                    <input type="text" placeholder="¿Cómo nos conociste?" />
+                    <input type="text" placeholder="Comentarios adicionales" />
+                </fieldset>
                 <button type="submit" class="form__button">Enviar</button>
             </form>
         </main>
-        <footer class="footer">
-
-        </footer>
+        <footer class="footer"></footer>
         <script src="./script.js"></script>
     </body>
 </html>
