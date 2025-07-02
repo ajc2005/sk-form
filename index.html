@@ -11,24 +11,63 @@
         <main class="main">
             <form method="get" class="main__form">
                 <fieldset class="form__fieldset-basic-info">
-                    <legend>Información Básica</legend>
-                    <label for="">
-                        <input type="text" placeholder="Nombre" />
-                        <input type="text" placeholder="Apellidos" />
-                    </label>
-                    <label for="">
-                        <input type="email" placeholder="example@domain.com" />
-                        <input type="tel" placeholder="+123 456 789" />
-                    </label>
+                    <legend class="form__fieldset-legend">Información Básica</legend>
+                    <div class="fieldset__input-container">
+                        <label for="forname-input"></label>
+                        <input type="text" id="forname-input" placeholder="Nombre" required />
+                    </div>
+                    <div class="fieldset__input-container">
+                        <label for="surname-input"></label>
+                        <input type="text" id="surname-input" placeholder="Apellidos" required />
+                    </div>
+                    <div class="fieldset__input-container">
+                        <label for="email-input"></label>
+                        <input type="email" id="email-input" placeholder="example@domain.com" required />
+                    </div>
+                    <div class="fieldset__input-container">
+                        <label for="phone-input"></label>
+                        <input type="tel" placeholder="+123 456 789" required />
+                    </div>
                 </fieldset>
                 <fieldset class="form__fieldset-user-preferences">
-                    <legend>Preferencias de Usuario</legend>
+                    <legend class="form__fieldset-legend">Preferencias de Usuario</legend>
+                    <div class="fieldset__genre-input-container">
+                        <label for="theater-genre-input">
+                            <input type="checkbox" id="theater-genre-input" /> Tragedy
+                        </label>
+                        <label for="theater-genre-input">
+                            <input type="checkbox" id="theater-genre-input" /> Comedy
+                        </label>
+                        <label for="theater-genre-input">
+                            <input type="checkbox" id="theater-genre-input" /> Drama
+                        </label>
+                        <label for="theater-genre-input">
+                            <input type="checkbox" id="theater-genre-input" /> Musical
+                        </label>
+                        <label for="theater-genre-input">
+                            <input type="checkbox" id="theater-genre-input" /> Fantasy
+                        </label>
+                        <label for="theater-genre-input">
+                            <input type="checkbox" id="theater-genre-input" /> Mystery
+                        </label>
+                        <label for="theater-genre-input">
+                            <input type="checkbox" id="theater-genre-input" /> Romance
+                        </label>
+                     </div>   
                 </fieldset>
                 <fieldset class="form__fieldset-additional-info">
-                    <legend>Información Adicional</legend>
+                    <legend class="form__fieldset-legend">Información Adicional</legend>
+                    
                     <input type="checkbox" required /> Acepto los términos de uso
-                    <input type="text" placeholder="¿Cómo nos conociste?" />
-                    <input type="text" placeholder="Comentarios adicionales" />
+
+                    <div class="fieldset__input-container">
+                        <label for="user-src-input"></label>
+                        <input type="text" id="user-src-input" placeholder="¿Cómo nos conociste?" />
+                    </div>
+                    <div class="fieldset__input-container">
+                        <label for="user-extra-info-input"></label>
+                        <input type="text" id="user-extra-info-input" placeholder="Comentarios adicionales" />
+                    </div>
                 </fieldset>
                 <button type="submit" class="form__button">Enviar</button>
             </form>
