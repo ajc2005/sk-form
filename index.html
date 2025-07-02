@@ -12,54 +12,59 @@
             <form method="get" class="main__form">
                 <fieldset class="form__fieldset-basic-info">
                     <legend class="form__fieldset-legend">Información Básica</legend>
-                    <div class="fieldset__input-container">
-                        <label for="forname-input"></label>
-                        <input type="text" id="forname-input" placeholder="Nombre" required />
+                    <div class="fieldset__user-name-section">
+                        <div class="fieldset__input-container">
+                            <label for="forname-input"></label>
+                            <input type="text" id="forname-input" placeholder="Nombre" required />
+                        </div>
+                        <div class="fieldset__input-container">
+                            <label for="surname-input"></label>
+                            <input type="text" id="surname-input" placeholder="Apellidos" required />
+                        </div>
                     </div>
-                    <div class="fieldset__input-container">
-                        <label for="surname-input"></label>
-                        <input type="text" id="surname-input" placeholder="Apellidos" required />
-                    </div>
-                    <div class="fieldset__input-container">
-                        <label for="email-input"></label>
-                        <input type="email" id="email-input" placeholder="example@domain.com" required />
-                    </div>
-                    <div class="fieldset__input-container">
-                        <label for="phone-input"></label>
-                        <input type="tel" placeholder="+123 456 789" required />
+                    <div class="fieldset__user-contact-info-section">
+                        <div class="fieldset__input-container">
+                            <label for="email-input"></label>
+                            <input type="email" id="email-input" placeholder="example@domain.com" required />
+                        </div>
+                        <div class="fieldset__input-container">
+                            <label for="phone-input"></label>
+                            <input type="tel" placeholder="+123 456 789" required />
+                        </div>
                     </div>
                 </fieldset>
                 <fieldset class="form__fieldset-user-preferences">
                     <legend class="form__fieldset-legend">Preferencias de Usuario</legend>
                     <div class="fieldset__genre-input-container">
-                        <label for="theater-genre-input">
-                            <input type="checkbox" id="theater-genre-input" /> Tragedy
+                        <label class="theater-genre-label" for="tragedy-genre-input">
+                            <input type="checkbox" id="tragedy-genre-input" /> Tragedy
                         </label>
-                        <label for="theater-genre-input">
-                            <input type="checkbox" id="theater-genre-input" /> Comedy
+                        <label class="theater-genre-label" for="comedy-genre-input">
+                            <input type="checkbox" id="comedy-genre-input" /> Comedy
                         </label>
-                        <label for="theater-genre-input">
-                            <input type="checkbox" id="theater-genre-input" /> Drama
+                        <label class="theater-genre-label" for="drama-genre-input">
+                            <input type="checkbox" id="drama-genre-input" /> Drama
                         </label>
-                        <label for="theater-genre-input">
-                            <input type="checkbox" id="theater-genre-input" /> Musical
+                        <label class="theater-genre-label" for="musical-genre-input">
+                            <input type="checkbox" id="musical-genre-input" /> Musical
                         </label>
-                        <label for="theater-genre-input">
-                            <input type="checkbox" id="theater-genre-input" /> Fantasy
+                        <label class="theater-genre-label" for="fantasy-genre-input">
+                            <input type="checkbox" id="fantasy-genre-input" /> Fantasy
                         </label>
-                        <label for="theater-genre-input">
-                            <input type="checkbox" id="theater-genre-input" /> Mystery
+                        <label class="theater-genre-label" for="mystery-genre-input">
+                            <input type="checkbox" id="mystery-genre-input" /> Mystery
                         </label>
-                        <label for="theater-genre-input">
-                            <input type="checkbox" id="theater-genre-input" /> Romance
+                        <label class="theater-genre-label" for="romance-genre-input">
+                            <input type="checkbox" id="romance-genre-input" /> Romance
                         </label>
                      </div>   
                 </fieldset>
-                <fieldset class="form__fieldset-additional-info">
+                <fieldset class="form__fieldset-extra-info">
                     <legend class="form__fieldset-legend">Información Adicional</legend>
-                    
-                    <input type="checkbox" required /> Acepto los términos de uso
-
+                    <div class="fieldset__input-container">
+                        <label class="terms-input-label" for="terms-input"></label>
+                        <input type="checkbox" id="terms-input" required /> Acepto los términos de uso
+                    </div>
                     <div class="fieldset__input-container">
                         <label for="user-src-input"></label>
                         <input type="text" id="user-src-input" placeholder="¿Cómo nos conociste?" />
