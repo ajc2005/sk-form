@@ -12,24 +12,26 @@
             <form method="get" class="main__form">
                 <fieldset class="form__fieldset-basic-info">
                     <legend class="form__fieldset-legend">Información Básica</legend>
-                    <div class="fieldset__user-name-section">
-                        <div class="fieldset__input-container">
-                            <label for="forname-input"></label>
-                            <input type="text" id="forname-input" placeholder="Nombre" required />
+                    <div class="fieldset__user-name-container">
+                        <div class="fieldset__user-name-section">
+                            <div class="fieldset__input-container">
+                                <label for="forname-input"></label>
+                                <input type="text" id="forname-input" placeholder="Nombre" required />
+                            </div>
+                            <div class="fieldset__input-container">
+                                <label for="surname-input"></label>
+                                <input type="text" id="surname-input" placeholder="Apellidos" required />
+                            </div>
                         </div>
-                        <div class="fieldset__input-container">
-                            <label for="surname-input"></label>
-                            <input type="text" id="surname-input" placeholder="Apellidos" required />
-                        </div>
-                    </div>
-                    <div class="fieldset__user-contact-info-section">
-                        <div class="fieldset__input-container">
-                            <label for="email-input"></label>
-                            <input type="email" id="email-input" placeholder="example@domain.com" required />
-                        </div>
-                        <div class="fieldset__input-container">
-                            <label for="phone-input"></label>
-                            <input type="tel" placeholder="+123 456 789" required />
+                        <div class="fieldset__user-contact-info-section">
+                            <div class="fieldset__input-container">
+                                <label for="email-input"></label>
+                                <input type="email" id="email-input" placeholder="example@domain.com" required />
+                            </div>
+                            <div class="fieldset__input-container">
+                                <label for="phone-input"></label>
+                                <input type="tel" placeholder="+123 456 789" required />
+                            </div>
                         </div>
                     </div>
                 </fieldset>
@@ -61,17 +63,19 @@
                 </fieldset>
                 <fieldset class="form__fieldset-extra-info">
                     <legend class="form__fieldset-legend">Información Adicional</legend>
-                    <div class="fieldset__input-container">
-                        <label class="terms-input-label" for="terms-input"></label>
-                        <input type="checkbox" id="terms-input" required /> Acepto los términos de uso
-                    </div>
-                    <div class="fieldset__input-container">
-                        <label for="user-src-input"></label>
-                        <input type="text" id="user-src-input" placeholder="¿Cómo nos conociste?" />
-                    </div>
-                    <div class="fieldset__input-container">
-                        <label for="user-extra-info-input"></label>
-                        <input type="text" id="user-extra-info-input" placeholder="Comentarios adicionales" />
+                    <div class="fieldset__extra-info-container">
+                        <div class="fieldset__input-container">
+                            <label class="terms-input-label" for="terms-input"></label>
+                            <input type="checkbox" id="terms-input" required /> Acepto los términos de uso
+                        </div>
+                        <div class="fieldset__input-container">
+                            <label for="user-src-input"></label>
+                            <input type="text" id="user-src-input" placeholder="¿Cómo nos conociste?" />
+                        </div>
+                        <div class="fieldset__input-container">
+                            <label for="user-extra-info-input"></label>
+                            <input type="text" id="user-extra-info-input" placeholder="Comentarios adicionales" />
+                        </div>
                     </div>
                 </fieldset>
                 <button type="submit" class="form__button">Enviar</button>

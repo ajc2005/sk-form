@@ -37,12 +37,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: lightgreen;
 }
 
+.fieldset__user-name-container {
+    width: 500px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .fieldset__user-name-section {
-    width: 600px;
+    width: 500px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -51,7 +60,7 @@ body {
 }
 
 .fieldset__user-contact-info-section {
-    width: 600px;
+    width: 500px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -78,7 +87,6 @@ body {
     justify-content: space-evenly;
 }
 
-
 .form__fieldset-extra-info {
     width: 600px;
     height: 150px;
@@ -87,6 +95,15 @@ body {
     align-items: center;
     justify-content: center;
     background-color: lightgrey;
+}
+
+.fieldset__extra-info-container {
+    width: 500px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .form__button {
